@@ -1,11 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Living Lab</title>
+    <title>Browse4Pets</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.23/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
+    <style>
+        .font-sora { font-family: "Sora", sans-serif; }
+    </style>
 </head>
-<body>
+<body class="font-sora bg-white">
+    <header class="shadow-md py-4 px-6">
+        <nav class="container mx-auto flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="c1-assets/logo-header.png" alt="Logo" class="w-10 h-10 mr-2">
+                <h3 class="text-2xl font-bold text-gray-900">Browse <span class="text-yellow-400">4</span> Pets</h3>
+            </div>
+            <ul class="hidden lg:flex space-x-6 text-gray-700 font-medium">
+                <li><a href="#" class="hover:text-yellow-500">Find a pet</a></li>
+                <li><a href="#" class="hover:text-yellow-500">Breeds</a></li>
+                <li><a href="#" class="hover:text-yellow-500">Contact us</a></li>
+            </ul>
+            <div class="flex items-center space-x-4">
+                <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <button class="btn btn-ghost btn-circle">
+                    <div class="indicator">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 17h5l-1.405-1.405A2.032 2.032 0 0118 14.158V11a6.002 6.002 0 00-4-5.659V5a2 2 0 10-4 0v.341C7.67 6.165 6 8.388 6 11v3.159c0 .538-.214 1.055-.595 1.436L4 17h5m6 0v1a3 3 0 11-6 0v-1m6 0H9" />
+                        </svg>
+                    </div>
+                </button>
+                <button class="btn btn-outline">Login</button>
+                <button class="btn bg-yellow-400 text-white hover:bg-yellow-500">Register</button>
+            </div>
+        </nav>
+    </header>
     
+    <main class="container relative mx-auto py-20 flex flex-col lg:flex-row items-center justify-between">
+        <div class="max-w-2xl absolute top-32 left-0 z-10">
+            <h1 class="text-4xl font-bold text-gray-900 leading-tight">Pamper Your Pet, <br> Because They Deserve <br> the Best</h1>
+            <p class="mt-4 text-gray-600">Discover a world of treats, toys, and essentials handpicked for <br> your furry friends. Shop now and make tails wag with joy!</p>
+            <button class="mt-6 btn bg-yellow-400 text-white hover:bg-yellow-500">Find a pet</button>
+        </div>
+        <div class=" flex-shrink-0 mt-10 lg:mt-0">
+            <img src="c1-assets/cat-big.png" alt="Cute Cat" class="w-full max-w-7xl">
+        </div>
+    </main>
+    <!-- browse part start -->
+    <main class="container mx-auto py-20">
+        <h2 class="text-2xl font-bold text-gray-900 mb-6">Browse By Categories</h2>
+        <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
+            <div class="bg-[#F9DF8A] p-8  rounded-lg text-center">
+               <div class="bg-white py-8 mx-8 rounded-full">
+                <img src="c1-assets/dog-cartoon.png" alt="Dog" class="mx-auto w-12 h-12">
+               </div>
+                <p class="mt-6 mb-3 text-2xl font-bold">Dog</p>
+                <p class="text-gray-600">3 items</p>
+            </div>
+
+            <div class="bg-[#F9DF8A] p-8  rounded-lg text-center">
+                <div class="bg-white py-8 mx-8 rounded-full">
+                 <img src="c1-assets/fish-cartoon.png" alt="Fish" class="mx-auto w-12 h-12">
+                </div>
+                 <p class="mt-6 mb-3 text-2xl font-bold">Fish</p>
+                 <p class="text-gray-600">3 items</p>
+             </div>
+             <div class="bg-[#F9DF8A] p-8  rounded-lg text-center">
+                <div class="bg-white py-8 mx-8 rounded-full">
+                 <img src="c1-assets/cat-cartoon.png" alt="Cat" class="mx-auto w-12 h-12">
+                </div>
+                 <p class="mt-6 mb-3 text-2xl font-bold">Cat</p>
+                 <p class="text-gray-600">3 items</p>
+             </div>
+
+             <div class="bg-[#F9DF8A] p-8  rounded-lg text-center">
+                <div class="bg-white py-8 mx-8 rounded-full">
+                 <img src="c1-assets/bird-cartoon.png" alt="Bard" class="mx-auto w-12 h-12">
+                </div>
+                 <p class="mt-6 mb-3 text-2xl font-bold">Bard</p>
+                 <p class="text-gray-600">3 items</p>
+             </div>
+
+             <div class="bg-[#F9DF8A] p-8  rounded-lg text-center">
+                <div class="bg-white py-8 mx-8 rounded-full">
+                 <img src="c1-assets/cute-pet-small.png" alt="Dog" class="mx-auto w-12 h-12">
+                </div>
+                 <p class="mt-6 mb-3 text-2xl font-bold">Small Pet</p>
+                 <p class="text-gray-600">3 items</p>
+             </div>
+
+
+             <div class="bg-[#F9DF8A] p-8  rounded-lg text-center">
+                <div class="bg-white py-8 mx-8 rounded-full">
+                 <img src="c1-assets/rabbit-cartoon.png" alt="Dog" class="mx-auto w-12 h-12">
+                </div>
+                 <p class="mt-6 mb-3 text-2xl font-bold">Rabbit</p>
+                 <p class="text-gray-600">3 items</p>
+             </div>
+        
+        </div>
+    </main>
+    <!-- browse part end -->
 </body>
 </html>
