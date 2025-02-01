@@ -18,11 +18,12 @@
       .font-sora {
         font-family: "Sora", sans-serif;
       }
+
     </style>
   </head>
-  <body class="font-sora bg-white">
-    <header class="bg-[#FFF9F4] py-4 px-6">
-      <nav class="container mx-auto flex justify-between items-center">
+  <body class="font-sora bg-white mx-auto max-w-[1600px]">
+    <header class="bg-[#FFF9F4] px-6">
+      <nav class="container mx-auto py-4 flex justify-between items-center max-w-[1320px]">
         <div class="flex justify-btween md:items-center">
           <img
             src="c1-assets/logo-header.png"
@@ -96,9 +97,9 @@
           </div>
       </nav>
     </header>
-    <main>
+    <main class=" mx-auto">
       <div
-        class="container md:relative mx-auto py-20 flex flex-col lg:flex-row items-center justify-between"
+        class="container max-w-[1320px] md:relative mx-auto py-20 flex flex-col lg:flex-row items-center justify-between"
       >
         <div class="max-w-xl absolute md:max-w-2xl top-32 left-0 z-10">
           <h1 class="text-4xl font-bold text-gray-900 leading-tight">
@@ -111,7 +112,7 @@
             <br />
             your furry friends. Shop now and make tails wag with joy!
           </p>
-          <button class="mt-6 btn bg-yellow-400 text-[#111111] hover:bg-yellow-500 delay-[5s ease] scale-100">
+          <button class="mt-6 btn bg-yellow-400 text-[#111111] hover:bg-yellow-500 delay-[5s ease] hover:scale-125 ">
             Find a pet
           </button>
         </div>
@@ -119,17 +120,17 @@
           <img
             src="c1-assets/cat-big.png"
             alt="Cute Cat"
-            class="w-full max-w-7xl"
+            class="w-full max-w-6xl"
           />
         </div>
       </div>
       <!-- browse part start -->
-      <div class="container mx-auto py-20">
+      <div class="max-w-[1320px] container mx-auto py-20">
         <h2 class="text-2xl font-bold text-gray-900 mb-6">
           Browse By Categories
         </h2>
         <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
-          <div class="bg-[#F9DF8A] p-8 rounded-lg text-center">
+          <div class="bg-[#F9DF8A] p-4 rounded-lg text-center">
             <div class="bg-white py-8 mx-8 rounded-full">
               <img
                 src="c1-assets/dog-cartoon.png"
@@ -141,7 +142,7 @@
             <p class="text-gray-600">3 items</p>
           </div>
 
-          <div class="bg-[#F9DF8A] p-8 rounded-lg text-center">
+          <div class="bg-[#F9DF8A] p-4 rounded-lg text-center">
             <div class="bg-white py-8 mx-8 rounded-full">
               <img
                 src="c1-assets/fish-cartoon.png"
@@ -152,7 +153,7 @@
             <p class="mt-6 mb-3 text-2xl font-bold">Fish</p>
             <p class="text-gray-600">3 items</p>
           </div>
-          <div class="bg-[#F9DF8A] p-8 rounded-lg text-center">
+          <div class="bg-[#F9DF8A] p-4 rounded-lg text-center">
             <div class="bg-white py-8 mx-8 rounded-full">
               <img
                 src="c1-assets/cat-cartoon.png"
@@ -164,7 +165,7 @@
             <p class="text-gray-600">3 items</p>
           </div>
 
-          <div class="bg-[#F9DF8A] p-8 rounded-lg text-center">
+          <div class="bg-[#F9DF8A] p-4 rounded-lg text-center">
             <div class="bg-white py-8 mx-8 rounded-full">
               <img
                 src="c1-assets/bird-cartoon.png"
@@ -176,7 +177,7 @@
             <p class="text-gray-600">3 items</p>
           </div>
 
-          <div class="bg-[#F9DF8A] p-8 rounded-lg text-center">
+          <div class="bg-[#F9DF8A] p-4 rounded-lg text-center">
             <div class="bg-white py-8 mx-8 rounded-full">
               <img
                 src="c1-assets/cute-pet-small.png"
@@ -188,7 +189,7 @@
             <p class="text-gray-600">3 items</p>
           </div>
 
-          <div class="bg-[#F9DF8A] p-8 rounded-lg text-center">
+          <div class="bg-[#F9DF8A] p-4 rounded-lg text-center">
             <div class="bg-white py-8 mx-8 rounded-full">
               <img
                 src="c1-assets/rabbit-cartoon.png"
@@ -205,7 +206,7 @@
 
       <!-- Trending Pet Products part start -->
       <section class="bg-[#FFF9F4]">
-        <div class="container mx-auto py-20">
+        <div class="container max-w-[1320px] mx-auto py-20">
           <h2 class="text-2xl font-bold text-gray-900 mb-6">
             Trending Pet Products
           </h2>
@@ -219,7 +220,7 @@
               <button class="mt-4 btn bg-white text-black border border-none">
                 Shop Now
               </button>
-              <div class="md:absolute mt-[-90px] ml-[140px]">
+              <div class="md:absolute mt-[-90px] ml-[80px]">
                 <img
                   src="c1-assets/cute-pet-mid.png"
                   alt="Dog T-Shirt"
@@ -359,7 +360,7 @@
         </div>
       </section>
       <!-- every day low price start -->
-      <section class="container mx-auto mt-32 py-65 mb-20">
+      <section class="container max-w-[1320px] mx-auto mt-32 py-65 mb-20">
         <h2 class="text-2xl font-bold text-[#111111] mb-6">
           Everyday Low Price
         </h2>
@@ -376,7 +377,7 @@
             <img
               src="c1-assets/cute-dog-mid.png"
               alt="Pet Grooming Mitt"
-              class=" bottom-0 right-0 w-80"/>
+              class=" bottom-0 right-0 w-60"/>
             </div>
            </div> 
            <div class="h-[334px] md:w-[700px] bg-gradient-to-r from-[#FFF9F4] to-[#F9DF8A] p-6 rounded-lg h-auto relative">
@@ -396,7 +397,7 @@
      
      
     
-      <main class="container mx-auto py-20 z-40 relative ">
+      <section class="container mx-auto py-20 z-40 relative ">
         <div class="w-[400px] md:w-[1320px] bg-white bg-[#FFF9F4] mx-auto py-10 rounded-xl shadow-lg top-48">
             <section class="bg-custom-light p-10 rounded-lg flex flex-col md:flex-row items-center justify-between text-center md:text-left">
                 <img src="c1-assets/cute-pet-mid.png" alt="Cute Dog" class="w-57 h-60 ml-20">
@@ -411,11 +412,11 @@
                 </div>
             </section>
         </div>
-      </main>
+      </section>
 
       <!-- footer part -->
        <footer class="bg-custom-dark py-56 w-full bg-[#FFDC2680] -mt-60 absolute ">
-     <div class="container grid grid-cols-1 mx-4 md:grid-cols-3 gap-6 md:text-left md:mx-auto">
+     <div class="container max-w-[1320px] grid grid-cols-1 mx-4 md:grid-cols-3 gap-6 md:text-left md:mx-auto">
          <div>
           <div class="flex items-center gap-4">
           <img src="c1-assets/logo-footer.png" alt="">
